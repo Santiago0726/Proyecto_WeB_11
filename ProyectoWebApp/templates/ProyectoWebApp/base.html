@@ -22,7 +22,7 @@
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
       
-        <span class="site-heading-lower">1</span>
+        <span class="site-heading-lower">TALLER JIMMOTOS</span>
       </h1>
 
 
@@ -38,16 +38,16 @@
           <li class="nav-item {% if request.path == '/' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}">Inicio</a>
           </li>
-          <li class="nav-item {% if request.path == '/servicios' %}active{% endif %} px-lg-4">
+          <li class="nav-item {% if request.path == '/servicios/' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Servicios' %}">Servicios</a>
           </li>
-          <li class="nav-item {% if request.path == '/tienda' %}active{% endif %} px-lg-4">
+          <li class="nav-item {% if request.path == '/tienda/' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Tienda' %}">Tienda</a>
           </li>
-          <li class="nav-item {% if request.path == '/contacto' %}active{% endif %} px-lg-4">
+          <li class="nav-item {% if request.path == '/contacto/' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Contacto' %}">Contacto</a>
           </li>
-          <li class="nav-item {% if request.path == '/blog' %}active{% endif %} px-lg-4">
+          <li class="nav-item {% if request.path|slice:'6' == '/blog/' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Blog' %}">Blog</a>
           </li>
          
@@ -85,11 +85,11 @@
 	        </a>
 	    </p>
         <p class="m-0 mbt">
-        	<a href="sample.html" class="link">8</a> ·
-        	<a href="sample.html" class="link">9</a> ·
-        	<a href="sample.html" class="link">10</a>
+        	<a class="link">Política de privacidad</a> ·
+        	<a class="link">Aviso legal</a> ·
+        	<a class="link">Cookies</a>
 		</p>
-        <p class="m-0 mbt1">11</p>
+        <p class="m-0 mbt1">Jimmotos 2021</p>
       </div>
 	</footer>
 
